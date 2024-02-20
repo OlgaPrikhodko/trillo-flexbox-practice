@@ -193,27 +193,23 @@
 ////////////////////////////////
 /// OVERVIEW
 .overview {
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   gap: 3rem;
   border-bottom: var(--border-bottom-grey);
-
-  // height: 4rem;
 
   &__heading {
     font-size: 2.5rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 1.5rem 3rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 
   &__stars {
     display: flex;
-    // background-color: violet;
   }
+
   &__icon-star,
   &__icon-location {
     width: 1.75rem;
@@ -222,29 +218,31 @@
   }
 
   &__location {
+    font-size: 1.5rem;
     margin-left: auto;
     display: flex;
     align-items: center;
   }
 
-  &__icon-location {
-  }
-
   &__rating {
     background-color: var(--color-primary-light);
     color: #fff;
-    font-size: 1.3rem;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
+    padding: 0.5rem 2rem;
   }
 
   &__rating-average {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
   }
+
   &__rating-count {
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 }
 
@@ -263,5 +261,27 @@
 
   &:hover {
     color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
   }
 }
