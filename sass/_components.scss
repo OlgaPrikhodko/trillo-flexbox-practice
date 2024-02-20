@@ -184,10 +184,84 @@
 .gallery {
   display: flex;
 
-  &__item {
-  }
   &__photo {
     width: 100%;
     display: block;
+  }
+}
+
+////////////////////////////////
+/// OVERVIEW
+.overview {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: var(--border-bottom-grey);
+
+  // height: 4rem;
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+    margin-left: 2rem;
+  }
+
+  &__stars {
+    display: flex;
+    // background-color: violet;
+  }
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-location {
+  }
+
+  &__rating {
+    background-color: var(--color-primary-light);
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
+
+  &__rating-average {
+    font-size: 2.5rem;
+  }
+  &__rating-count {
+  }
+}
+
+///////////////////////////////////
+/// BUTTON INLINE
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  padding: 0.3rem;
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
   }
 }
