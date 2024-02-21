@@ -12,6 +12,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+    }
   }
 
   &__stars {
@@ -40,16 +44,28 @@
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0.5rem 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 1rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.8rem;
+    }
   }
 }

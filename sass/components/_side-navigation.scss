@@ -58,6 +58,7 @@
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
+    gap: 2rem;
     position: relative;
     z-index: 10;
 
@@ -65,12 +66,22 @@
       justify-content: center;
       padding: 2rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 0.7rem;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
     fill: currentColor;
-    margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
