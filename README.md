@@ -2,15 +2,13 @@
 
 This is a fictional all-in-one booking app. UI only.
 
-Deployed [here](https://olgaprikhodko.github.io/trillo-flexbox-practice/)
-
 |             Desktop Screens              |                 Mobile Screens                  |
 | :--------------------------------------: | :---------------------------------------------: |
 | ![](img/readme/trillo-screencapture.png) | ![](img/readme/trillo-mobile-screencapture.png) |
 
 ### View Project Live
 
-[https://olgaprikhodko.github.io/nexter/](https://olgaprikhodko.github.io/nexter/)
+[https://olgaprikhodko.github.io/trillo-flexbox-practice/](https://olgaprikhodko.github.io/trillo-flexbox-practice/)
 
 ### Getting started
 
